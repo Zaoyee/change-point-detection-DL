@@ -9,7 +9,9 @@ You can run test_run.py script simply type
 `python test_run.py`
 
 The data is in the path of './data/processed/detailed/'
+
 'datamat.csv' is the detailed dataset
+
 'datamat2.csv' is the sysmetic dataset
 
 In the `test_run.py` file, it should clarify the model and bunch of paramters before use the function.
