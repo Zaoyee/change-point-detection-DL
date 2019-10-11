@@ -19,15 +19,3 @@ The results also include the loss and accuracy if needed.
 `test_run.py` runs across all the validation fold, the based on the average of accuracy get an
 optimal traning epoches; then use that to train all data except the testFold.
 
-    © 2019 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Help
-
-Contact GitHub
-Pricing
-API
-Training
-Blog
