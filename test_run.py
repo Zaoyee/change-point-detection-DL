@@ -1,4 +1,4 @@
-import train_test as tt 
+import train_test as tt
 import test_model as tm
 import torch
 import os
@@ -12,7 +12,7 @@ setupdic = {
     'lr' : 1e-4,
     'batch_size' : 300,
     'weight_decay' : 0,
-    'num_epoches' : 1000,
+    'num_epoches' : 200,
     'foldID' : 1
 }
 

@@ -122,14 +122,12 @@ def train(model, train_in, train_tar, other_in, other_tar, batch_size, criterion
                 else:
                     v_loss += temp_loss.data.numpy()
                 test_acc = acc_computer(model, other_set, other_out)
-            print('-'*125)
+            print('-'*103)
             print('Epoch [{:-03d}/{}]  |  Train Loss: {:.3f}  |  Train Acc: {:.3f}  | Valid Loss: {:.3f}  |  Valid Acc: {:.3f}  |'.
             format(epoch+1, num_epoches, print_loss/iter_num, train_acc, v_loss/v_iter, test_acc))
             other_loss_recorder[epoch] = v_loss/v_iter
             other_acc_recorder[epoch] = test_acc
         else:
-
-
             print('-'*80)
             print('Epoch [{:-03d}/{}]  |  Train Loss:  {:.3f}  |  Train Accuarcy:  {:.3f}  |'
             .format(epoch + 1, num_epoches, print_loss/iter_num, train_acc))
@@ -192,7 +190,7 @@ def start_train(model, filepath, testID):
     v_loss /= len(valid_id)
     v_acc /= len(valid_id)
 
-    optim_num_epoches = np.argmax(v_acc)
+    optim_num_epoches = np.argmax(v_acc)+1
 
     model.apply(weight_init)
     test_data, test_label, test_out = divideData(overallData, True, testID, None)
@@ -201,6 +199,6 @@ def start_train(model, filepath, testID):
     # shows an error here, should not be, need to check out later
     tst_loss, tst_acc, pred = train(model, test_data, test_label, None, None, batch_size, criterion,\
         optimer, optim_num_epoches, test_out, None )
-
+    pred = pd.DataFrame(pred)
     return(tst_loss, tst_acc, pred)
 
