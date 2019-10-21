@@ -2,6 +2,7 @@ import train_test as tt
 import test_model as tm
 import torch
 import os
+import sys
 
 # possible useful inputs specified
 setupdic = {
@@ -13,7 +14,7 @@ setupdic = {
     'batch_size' : 300,
     'weight_decay' : 0,
     'num_epoches' : 1,
-    'foldID' : 1
+    'foldID' : int(sys.argv[1]),
 }
 
 ## setup the dict path to save the file.
