@@ -47,6 +47,19 @@ def modelsetup(model, lr, weight_decay):
     return(criterion, optimer)
 
 
+def get_acc(pred, target_out):
+    correct_1 = np.sum((pred[target_out['max.log.lambda'] == np.inf]) >=
+                       (target_out[target_out['max.log.lambda'] == np.inf]['min.log.lambda'].values[:, np.newaxis]))
+
+    correct_2 = np.sum((pred[target_out['min.log.lambda'] == -np.inf]) <=
+                       (target_out[target_out['min.log.lambda'] == -np.inf]['max.log.lambda'].values[:, np.newaxis]))
+
+    idx = (target_out['min.log.lambda'] != -np.inf) & (target_out['max.log.lambda'] != np.inf)
+    correct_3 = np.sum((pred[idx] >= target_out[idx]['min.log.lambda'].values[:, np.newaxis]) &
+                       (pred[idx] <= target_out[idx]['max.log.lambda'].values[:, np.newaxis]))
+    acc = (correct_1 + correct_2 + correct_3) / pred.size
+    return (acc)
+
 def acc_computer(model, tensor_set, output):
     check = tensor_set.tensors[0]
     if torch.cuda.is_available():
@@ -146,7 +159,6 @@ def train(model, train_in, train_tar, other_in, other_tar, batch_size, criterion
         return(train_loss_recorder, train_acc_recorder,
         other_loss_recorder, other_acc_recorder)
 
-
 def weight_init(m):
     if isinstance(m,(nn.Conv1d, nn.Linear)):
         #nn.init.orthogonal_(m.weight)
@@ -199,6 +211,9 @@ def start_train(model, filepath, testID):
     # shows an error here, should not be, need to check out later
     tst_loss, tst_acc, pred = train(model, test_data, test_label, None, None, batch_size, criterion,\
         optimer, optim_num_epoches, test_out, None )
+
+    pred_acc = get_acc(pred, test_out)
+    pred_acc = pd.DataFrame(np.array(pred_acc).reshape(-1,1))
     pred = pd.DataFrame(pred)
-    return(tst_loss, tst_acc, pred)
+    return(tst_loss, tst_acc, pred, pred_acc)
 

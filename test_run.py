@@ -12,7 +12,7 @@ setupdic = {
     'lr' : 1e-4,
     'batch_size' : 300,
     'weight_decay' : 0,
-    'num_epoches' : 200,
+    'num_epoches' : 1,
     'foldID' : 1
 }
 
@@ -47,5 +47,5 @@ else:
 
 # start do all the training
 # the return is the
-t_loss, t_acc, pred = tt.start_train(model, loadpath, foldID)
+t_loss, t_acc, pred, pred_acc = tt.start_train(model, loadpath, foldID)
 pred.to_csv(pathname, na_rep="NULL")
