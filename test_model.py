@@ -31,7 +31,7 @@ class residual_block(nn.Module):
         return F.relu(x+out, True)
 
 class resnet(nn.Module):
-    def __init__(self, in_channel, num_classes, lr, batch_size, weight_decay, num_epoches):
+    def __init__(self, in_channel, num_classes, lr, batch_size, weight_decay, num_epoches, **kwargs):
         super(resnet, self).__init__()
         self.lr = lr
         self.batch_size = batch_size

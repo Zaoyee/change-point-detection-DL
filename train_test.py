@@ -167,7 +167,7 @@ def weight_init(m):
         m.weight.data.fill_(1)
         m.bias.data.zero_()
 
-def start_train(model, filepath, testID):
+def start_train(model, filepath, testID, **kwargs):
     overallData = pd.read_csv(filepath)    
     valid_id = np.setdiff1d(np.unique(overallData['foldID']), \
         testID)
