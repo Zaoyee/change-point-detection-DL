@@ -5,9 +5,10 @@ import os
 import sys
 
 # possible useful inputs specified
+# 1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124
 setupdic = {
     'filepath': './data/processed/systemic/datamat.csv',
-    'modelName': '1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124',
+    'modelName': 'resnet',
     'outname' : 'pred.csv',
     'outdir' : './data/savedata/systemic/model',
     'lr' : 1e-4,
@@ -31,17 +32,24 @@ if not os.path.exists(pathname):
     os.makedirs(pathname)
 pred_path = os.path.join(pathname, setupdic['outname'])
 acc_path = os.path.join(pathname, 'acc.csv')
+opim_epo_path = os.path.join(pathname, 'opt_n.csv')
+table_path = os.path.join(pathname, 'table.csv')
+
 # define model param
 if torch.cuda.is_available():
+    model = tm.resnet(in_channel=1, num_classes=1, **setupdic).cuda()
     # model = tm.resnet2(in_channel=1, num_classes=1, **setupdic).cuda()
-    model = tm.simple1dcnn(**setupdic).cuda()
+    #model = tm.simple1dcnn(**setupdic).cuda()
     print('GPU yeah!!!!')
 else:
+    model = tm.resnet(in_channel=1, num_classes=1, **setupdic)
     # model = tm.resnet2(in_channel=1, num_classes=1, **setupdic)
-    model = tm.simple1dcnn(**setupdic)
+    #model = tm.simple1dcnn(**setupdic)
 
 # start do all the training
 # the return is the
-t_loss, t_acc, pred, pred_acc = tt.start_train(model, **setupdic)
+t_loss, t_acc, pred, pred_acc, optim_epo, table= tt.start_train(model, **setupdic)
 pred.to_csv(pred_path, na_rep="NULL")
 pred_acc.to_csv(acc_path, na_rep="NULL")
+optim_epo.to_csv(opim_epo_path, na_rep="NULL")
+table.to_csv(table_path, na_rep="NULL")

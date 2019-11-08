@@ -19,7 +19,13 @@ def divideData(data_in, testFlg, test_id, valid_id):
         test_data = data_temp.iloc[:,1:-5]
         test_label = data_temp.iloc[:,-4]
         test_out = data_temp.iloc[:,-3:-1]
-        return(test_data, test_label, test_out)
+
+        train_data_w = data_in[data_in['foldID'] != test_id]
+        train_data = train_data_w.iloc[:, 1:-5]
+        train_label = train_data_w.iloc[:, -4]
+        train_out = train_data_w.iloc[:, -3:-1]
+
+        return(test_data, train_data, test_label, train_label, test_out, train_out)
     else:
         data_temp = data_in[data_in['foldID'] != test_id]
         valid_data_w = data_temp[data_temp['foldID'] == valid_id]
@@ -79,13 +85,16 @@ def acc_computer(model, tensor_set, output):
     return(acc)
 
 
-def train(model, train_in, train_tar, other_in, other_tar, batch_size, criterion, optimer, num_epoches, train_out, other_out):
+def train(model, train_in, train_tar, other_in, other_tar, batch_size, criterion,
+          optimer, num_epoches, train_out, other_out, finalflg):
     e = 0
     train_set, train_loader = _loadData(train_in, train_tar,batch_size)
     train_loss_recorder = np.zeros(num_epoches)
     train_acc_recorder = np.zeros(num_epoches)
-    if other_in is not None:
-        other_set, other_loader = _loadData(other_in, other_tar,batch_size)
+
+    other_set, other_loader = _loadData(other_in, other_tar,batch_size)
+
+    if finalflg is False:
         other_loss_recorder = np.zeros(num_epoches)
         other_acc_recorder = np.zeros(num_epoches)
     
@@ -114,7 +123,7 @@ def train(model, train_in, train_tar, other_in, other_tar, batch_size, criterion
                 print_loss += loss.data.numpy()
             train_acc = acc_computer(model, train_set, train_out)
 
-        if other_in is not None:
+        if finalflg is False:
             v_loss ,v_iter = 0, 0
             for v_data in other_loader:
                 v_iter += 1
@@ -127,7 +136,7 @@ def train(model, train_in, train_tar, other_in, other_tar, batch_size, criterion
                     v_in = Variable(v_in)
                     v_tar = Variable(v_tar)
                     v_in = v_in.type(torch.DoubleTensor)
-                
+
                 v_out = model(v_in)
                 temp_loss = criterion(v_out, v_tar.float())
                 if torch.cuda.is_available():
@@ -135,6 +144,7 @@ def train(model, train_in, train_tar, other_in, other_tar, batch_size, criterion
                 else:
                     v_loss += temp_loss.data.numpy()
                 test_acc = acc_computer(model, other_set, other_out)
+
             print('-'*103)
             print('Epoch [{:-03d}/{}]  |  Train Loss: {:.3f}  |  Train Acc: {:.3f}  | Valid Loss: {:.3f}  |  Valid Acc: {:.3f}  |'.
             format(epoch+1, num_epoches, print_loss/iter_num, train_acc, v_loss/v_iter, test_acc))
@@ -147,13 +157,12 @@ def train(model, train_in, train_tar, other_in, other_tar, batch_size, criterion
         train_loss_recorder[epoch] = print_loss/iter_num
         train_acc_recorder[epoch] = train_acc
 
-    fin_check = train_set.tensors[0]
-    if torch.cuda.is_available():
-        pred = model(Variable(fin_check).cuda()).cpu().data.numpy()
-    else:
-        pred = model(Variable(fin_check)).data.numpy()
-
-    if other_in is None:
+    if finalflg:
+        fin_check = other_set.tensors[0]
+        if torch.cuda.is_available():
+            pred = model(Variable(fin_check).cuda()).cpu().data.numpy()
+        else:
+            pred = model(Variable(fin_check)).data.numpy()
         return(train_loss_recorder, train_acc_recorder, pred)
     else:
         return(train_loss_recorder, train_acc_recorder,
@@ -166,6 +175,17 @@ def weight_init(m):
     elif isinstance(m,nn.BatchNorm1d):
         m.weight.data.fill_(1)
         m.bias.data.zero_()
+
+def writetable(table, testID, valid_id, train_loss,
+               train_acc, valid_loss, valid_acc):
+    append_size = len(train_acc)
+    table['test_ID'] = np.repeat(testID, append_size)
+    table['valid_id'] = np.repeat(valid_id, append_size)
+    table['train_loss'] = train_loss
+    table['train_acc'] = train_acc
+    table['valid_loss'] = valid_loss
+    table['valid_acc'] = valid_acc
+    return(table)
 
 def start_train(model, filepath, testID, **kwargs):
     overallData = pd.read_csv(filepath)    
@@ -180,6 +200,9 @@ def start_train(model, filepath, testID, **kwargs):
     weight_decay = model.weight_decay
     num_epoches = model.num_epoches
     torch.manual_seed(13)
+
+    table_all = pd.DataFrame(columns=['test_ID', 'valid_id', 'train_loss',
+                          'train_acc', 'valid_loss', 'valid_acc'])
     for valid_index in valid_id:
         model.apply(weight_init)
         train_data, valid_data, train_label, valid_label, train_out, valid_out = \
@@ -187,10 +210,15 @@ def start_train(model, filepath, testID, **kwargs):
             valid_id=valid_index)
         
         criterion, optimer = modelsetup(model, lr, weight_decay)
-        train_loss_recorder, train_acc_recorder, other_loss_recorder, other_acc_recorder = train(model, train_data,\
-             train_label, valid_data,\
-             valid_label, batch_size, criterion,\
-                 optimer, num_epoches, train_out, valid_out)
+        table = pd.DataFrame(columns=['test_ID', 'valid_id', 'train_loss',
+                                      'train_acc', 'valid_loss', 'valid_acc'])
+        train_loss_recorder, train_acc_recorder,\
+        other_loss_recorder, other_acc_recorder = train(model, train_data,\
+             train_label, valid_data, valid_label, batch_size, criterion, optimer,
+                                                        num_epoches, train_out, valid_out, False)
+        table = writetable(table, testID, valid_index, train_loss_recorder,
+                           train_acc_recorder, other_loss_recorder, other_acc_recorder)
+        table_all = pd.concat([table_all, table], 0, sort=False)
 
         t_loss += train_loss_recorder
         t_acc += train_acc_recorder
@@ -205,15 +233,22 @@ def start_train(model, filepath, testID, **kwargs):
     optim_num_epoches = np.argmax(v_acc)+1
 
     model.apply(weight_init)
-    test_data, test_label, test_out = divideData(overallData, True, testID, None)
+
+    test_data, train_data, test_label, train_label, \
+    test_out, train_out = divideData(overallData, True, testID, None)
+
     criterion, optimer = modelsetup(model, lr, weight_decay)
 
     # shows an error here, should not be, need to check out later
-    tst_loss, tst_acc, pred = train(model, test_data, test_label, None, None, batch_size, criterion,\
-        optimer, optim_num_epoches, test_out, None )
+    tst_loss, tst_acc, pred = train(model, train_data,
+                                    train_label, test_data,
+                                    test_label, batch_size, criterion,\
+        optimer, optim_num_epoches, train_out, test_out, True)
 
     pred_acc = get_acc(pred, test_out)
     pred_acc = pd.DataFrame(np.array(pred_acc).reshape(-1,1))
     pred = pd.DataFrame(pred)
-    return(tst_loss, tst_acc, pred, pred_acc)
+    optim_num_epoches = pd.DataFrame(np.array(optim_num_epoches).reshape(-1,1))
+    return(tst_loss, tst_acc, pred, pred_acc,
+           optim_num_epoches, table_all.reset_index())
 
