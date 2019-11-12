@@ -16,12 +16,12 @@ import pandas as pd
 def divideData(data_in, testFlg, test_id, valid_id):
     if testFlg:
         data_temp = data_in[data_in['foldID'] == test_id]
-        test_data = data_temp.iloc[:,1:-5]
+        test_data = data_temp.iloc[:,1:-6]
         test_label = data_temp.iloc[:,-4]
         test_out = data_temp.iloc[:,-3:-1]
 
         train_data_w = data_in[data_in['foldID'] != test_id]
-        train_data = train_data_w.iloc[:, 1:-5]
+        train_data = train_data_w.iloc[:, 1:-6]
         train_label = train_data_w.iloc[:, -4]
         train_out = train_data_w.iloc[:, -3:-1]
 
@@ -29,12 +29,12 @@ def divideData(data_in, testFlg, test_id, valid_id):
     else:
         data_temp = data_in[data_in['foldID'] != test_id]
         valid_data_w = data_temp[data_temp['foldID'] == valid_id]
-        valid_data = valid_data_w.iloc[:,1:-5]
+        valid_data = valid_data_w.iloc[:,1:-6]
         valid_label = valid_data_w.iloc[:,-4]
         valid_out = valid_data_w.iloc[:,-3:-1]
 
         train_data_w = data_temp[data_temp['foldID'] != valid_id]
-        train_data = train_data_w.iloc[:,1:-5]
+        train_data = train_data_w.iloc[:,1:-6]
         train_label = train_data_w.iloc[:,-4]
         train_out = train_data_w.iloc[:,-3:-1]
         return(train_data, valid_data, train_label, valid_label, train_out, valid_out)

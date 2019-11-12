@@ -2,8 +2,235 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ff6491e-fc8c-4fad-a6b0-959152388428" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cv_changer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/detailed/datamat.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/systemic/datamat.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/1/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/1/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/1/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/1/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/2/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/2/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/2/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/2/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/3/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/3/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/3/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/3/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/4/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/4/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/4/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/4/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/5/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/5/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/5/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/5/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/6/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/6/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/6/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/6/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/1/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/1/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/2/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/2/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/3/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/3/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/4/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/4/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/5/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/5/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/6/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/6/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/1/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/1/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/1/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/1/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/2/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/2/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/2/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/2/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/3/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/3/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/3/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/3/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/4/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/4/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/4/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/4/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/5/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/5/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/5/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/5/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/6/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/6/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/6/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch1000/6/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch300/1/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch300/1/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch300/2/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch300/2/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch300/3/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch300/3/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch300/4/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch300/4/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch300/5/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch300/5/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch300/6/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch300/6/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/1/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/1/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/1/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/1/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/2/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/2/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/2/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/2/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/3/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/3/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/3/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/3/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/4/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/4/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/4/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/4/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/5/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/5/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/5/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/5/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/6/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/6/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/6/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/6/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/1/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/1/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/2/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/2/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/3/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/3/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/4/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/4/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/5/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/5/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/6/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/detailed/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/6/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/1/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/1/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/1/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/1/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/2/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/2/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/2/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/2/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/3/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/3/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/3/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/3/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/4/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/4/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/4/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/4/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/5/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/5/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/5/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/5/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/6/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/6/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/6/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch1000/6/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/1/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/1/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/2/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/2/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/3/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/3/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/4/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/4/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/5/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/5/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/6/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/1dcnnMaxpool3conv100x3channelK11_10_9Lin500_256_124/lr0.0001bs300decay0.0001epoch300/6/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1/1/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1/1/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1/1/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1/1/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/1/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/1/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/1/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/1/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/2/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/2/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/2/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/2/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/3/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/3/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/3/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/3/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/4/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/4/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/4/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/4/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/5/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/5/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/5/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/5/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/6/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/6/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/6/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1000/6/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch300/1/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch300/1/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch300/2/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch300/2/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch300/3/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch300/3/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch300/4/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch300/4/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch300/5/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch300/5/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch300/6/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch300/6/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/1/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/1/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/1/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/1/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/2/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/2/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/2/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/2/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/3/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/3/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/3/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/3/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/4/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/4/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/4/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/4/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/5/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/5/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/5/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/5/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/6/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/6/opt_n.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/6/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch1000/6/table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/1/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/1/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/2/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/2/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/3/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/3/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/4/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/4/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/5/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/5/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/6/acc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/savedata/systemic/model/resnet2-3blocks/lr0.0001bs300decay0.0001epoch300/6/pred.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generate_parm_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate_parm_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monsoon-tester.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/monsoon-tester.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test_run.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,7 +240,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/change_point_detection_DL$cluster.coverage" NAME="cluster Coverage Results" MODIFIED="1572209283071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/change_point_detection_DL$cluster.coverage" NAME="cluster Coverage Results" MODIFIED="1573425263024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -34,8 +261,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3510">
-              <caret line="204" column="41" selection-start-line="204" selection-start-column="41" selection-end-line="204" selection-end-column="41" />
+            <state relative-caret-position="810">
+              <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
               <folding>
                 <element signature="e#91#109#0" expanded="true" />
               </folding>
@@ -43,11 +270,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+            <state relative-caret-position="234">
+              <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -56,20 +283,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_run.sh">
+        <entry file="file://$PROJECT_DIR$/test_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="563">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch300/1/acc.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+        <entry file="file://$PROJECT_DIR$/cv_changer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="15" selection-end-column="18" />
+            </state>
           </provider>
-          <provider selected="true" editor-type-id="csv-text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generate_parm_csv.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_run.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -92,20 +341,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/generate_parm_csv.py" />
-        <option value="$PROJECT_DIR$/test_run.sh" />
-        <option value="$PROJECT_DIR$/test_model.py" />
         <option value="$PROJECT_DIR$/test_acc.py" />
+        <option value="$PROJECT_DIR$/cv_changer.py" />
+        <option value="$PROJECT_DIR$/generate_parm_csv.py" />
+        <option value="$PROJECT_DIR$/test_model.py" />
         <option value="$PROJECT_DIR$/train_test.py" />
         <option value="$PROJECT_DIR$/test_run.py" />
+        <option value="$PROJECT_DIR$/test_run.sh" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="174" />
-    <option name="y" value="202" />
-    <option name="width" value="1440" />
-    <option name="height" value="841" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1021" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -123,6 +372,25 @@
               <item name="change-point-detection-DL" type="b2602c69:ProjectViewProjectNode" />
               <item name="change-point-detection-DL" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="change-point-detection-DL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="change-point-detection-DL" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="processed" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="change-point-detection-DL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="change-point-detection-DL" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="processed" type="462c0819:PsiDirectoryNode" />
+              <item name="cv2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="change-point-detection-DL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="change-point-detection-DL" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="savedata" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -198,23 +466,25 @@
       <workItem from="1572474297737" duration="440000" />
       <workItem from="1572475138127" duration="915000" />
       <workItem from="1573077435998" duration="999000" />
+      <workItem from="1573336158855" duration="11796000" />
+      <workItem from="1573507616056" duration="706000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28222000" />
+    <option name="totallyTimeSpent" value="40724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1021" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15405117" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15671642" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.112068966" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.067027025" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.19827586" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -225,11 +495,11 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.4983871" weight="0.32995737" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.4983871" weight="0.3336887" />
       <window_info anchor="right" x="0" y="0" width="430" height="818" id="Documentation" order="4" sideWeight="0.5016129" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
-      <window_info anchor="right" id="Python Console" order="6" weight="0.38752666" />
-      <window_info active="true" anchor="right" id="Terminal" order="7" visible="true" weight="0.2889126" />
+      <window_info anchor="right" id="Python Console" order="6" weight="0.3128998" />
+      <window_info active="true" anchor="right" id="Terminal" order="7" visible="true" weight="0.4099147" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,59 +519,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/processed/detailed/datamat.csv" />
+    <entry file="file://$PROJECT_DIR$/test_acc.py" />
+    <entry file="file://$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1/1/pred.csv" />
+    <entry file="file://$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1/1/acc.csv" />
+    <entry file="file://$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1/1/opt_n.csv" />
+    <entry file="file://$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1/1/table.csv" />
+    <entry file="file://$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch300/1/acc.csv" />
+    <entry file="file://$PROJECT_DIR$/monsoon-tester.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params/pars13.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params/pars9.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params/pars6.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params/pars5.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params/pars3.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params/pars7.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params/pars4.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params/pars1.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2021">
+          <caret line="555" column="32" lean-forward="true" selection-start-line="555" selection-start-column="32" selection-end-line="555" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/torch/nn/functional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="1380" lean-forward="true" selection-start-line="1380" selection-end-line="1380" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cv_changer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/generate_parm_csv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="288">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_model.py">
+    <entry file="file://$PROJECT_DIR$/test_run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="90" column="23" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="23" />
+        <state relative-caret-position="234">
+          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/processed/detailed/datamat.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_acc.py" />
-    <entry file="file://$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1/1/pred.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1/1/acc.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1/1/opt_n.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/savedata/systemic/model/resnet/lr0.0001bs300decay0.0001epoch1/1/table.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+    <entry file="file://$PROJECT_DIR$/test_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/train_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3510">
-          <caret line="204" column="41" selection-start-line="204" selection-start-column="41" selection-end-line="204" selection-end-column="41" />
+        <state relative-caret-position="810">
+          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
           <folding>
             <element signature="e#91#109#0" expanded="true" />
           </folding>
@@ -310,24 +641,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_run.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/savedata/detailed/model/resnet/lr0.0001bs300decay0.0001epoch300/1/acc.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="126">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
         </state>
       </provider>
     </entry>

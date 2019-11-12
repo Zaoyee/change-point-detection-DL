@@ -59,7 +59,7 @@ class resnet(nn.Module):
 
 class resnet2(nn.Module):
     def __init__(self, in_channel, num_classes, lr, batch_size, weight_decay, num_epoches, **kwargs):
-        super(resnet, self).__init__()
+        super(resnet2, self).__init__()
         self.lr = lr
         self.batch_size = batch_size
         self.weight_decay = weight_decay
